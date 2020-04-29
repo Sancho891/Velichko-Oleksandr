@@ -59,6 +59,23 @@ void ShowSecondPyramid(int height) {
 	}
 }
 
+// Show pyramid
+void ChoosePyramid(int height, int option) {
+	if (ValidateHeight(height) && ValidateOption(option)) {
+		if (option == 0) {
+			ShowFirstPyramid(height);
+		}
+		else if (option == 1) {
+			ShowSecondPyramid(height);
+		}
+	}
+	else {
+		cout << "Error\n";
+		return;
+	}
+
+}
+
  
 
 
