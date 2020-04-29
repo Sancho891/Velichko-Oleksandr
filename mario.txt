@@ -20,6 +20,12 @@ bool ValidateHeight(int height) {
 		return true;
 	return false;
 }
+// Validate option
+bool ValidateOption(int option) {
+	if (option == 0 || option == 1)
+		return true;
+	return false;
+}
  
 
 
