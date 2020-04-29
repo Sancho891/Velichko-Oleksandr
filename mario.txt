@@ -26,6 +26,21 @@ bool ValidateOption(int option) {
 		return true;
 	return false;
 }
+//Show first pyramid
+//  #
+// ##
+//###
+void ShowFirstPyramid(int height) {
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < height; j++) {
+			if (i + j >= height)
+				cout << "# ";
+			else
+				cout << "  ";
+		}
+		cout << endl;
+	}
+}
  
 
 
