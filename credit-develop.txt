@@ -3,7 +3,6 @@
 #include <iostream>
 using namespace std;
 
-<<<<<<< HEAD
 //перевірка карти на валідність
 bool CorrectCard(const char* NumberCard)
 {
@@ -26,17 +25,23 @@ bool CorrectCard(const char* NumberCard)
 
 	return 0 == Sum % 10;
 }
-=======
-
+//функцыя мейн
 int main()
 {
-    
-    return 0;
+	const int SIZE_CARD = 16;
+	char NumberCard[SIZE_CARD + 1]{};
+
+	CheckInput(NumberCard, SIZE_CARD);
+
+	ShowCardNumber(NumberCard, SIZE_CARD);
+
+	cin.clear();
+
+	if (CorrectCard(NumberCard))
+		cout << "\nAll is well with your card";
+	else
+		cout << "\nYou have problems with the card";
+
+	return 0;
 }
  
-
->>>>>>> 821d2fa... created program credit-develop
-
-
-
-
