@@ -26,6 +26,7 @@ bool CorrectCard(const char* NumberCard)
 	return 0 == Sum % 10;
 }
 //функцыя мейн
+
 int main()
 {
 	const int SIZE_CARD = 16;
@@ -45,3 +46,4 @@ int main()
 	return 0;
 }
  
+
